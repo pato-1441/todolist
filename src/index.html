@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/dist/output.css" rel="stylesheet">
+  <script src="app.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar bg-base-300">
+            <div class="flex-1">
+                <a class="btn btn-ghost normal-case text-xl">toDoList</a>
+            </div>
+            <div class="flex-none">
+                <button class="btn btn-square btn-ghost">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-5 h-5 stroke-current"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z"></path></svg>
+                </button>
+            </div>
+        </nav>
+    </header>
+    <div class="container w-96 mx-auto my-4 p-4 bg-gray-400 rounded-xl shadow-xl">
+        <h1 class="text-center text-2xl text-white">Lista de tareas</h1>
+        <div>
+            <form action="" class="flex flex-col items-center justify-center m-4">
+                <input id="inputAdd" type="text" required placeholder="Escriba aquí su tarea a añadir" class="input input-bordered w-full max-w-xs bg-white text-black mb-2" />
+                <button id="buttonAdd" class="btn btn-sm text-white">Añadir elemento</button>
+            </form>
+        </div>
+        <div class="bg-gray-300 p-2 rounded-xl text-black">
+            <div class="bg-gray-200 my-2 p-1 rounded-xl flex items-center justify-between">
+                <p id="elementoUno" class="ml-2 mr-1">Comprar leche, carne, papa, lechuga</p>
+                <button class="btn btn-xs btn-circle btn-outline mr-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" /></svg>
+                </button>
+            </div>
+            <div class="bg-gray-200 my-2 p-1 rounded-xl flex items-center justify-between">
+                <p class="ml-2 mr-1">Sacar el perro al parque</p>
+                <button class="btn btn-xs btn-circle btn-outline mr-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" /></svg>
+                </button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
